@@ -1,3 +1,8 @@
 # VHDL_Study
 
-https://i.imgur.com/pgQtyxC.png
+## Resultados:
+Registrador de 8 bits(reg8):
+![ResultadoRegistrador](https://i.imgur.com/pgQtyxC.png)
+
+
+
