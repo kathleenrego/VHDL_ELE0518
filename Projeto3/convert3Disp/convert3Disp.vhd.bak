@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity convert3Disp is
+	port(
+		num: in std_logic_vector(7 downto 0);
+		disp_0, disp_1, disp_2: out std_logic_vector(6 downto 0)
+	);
+end convert3Disp;
+
+architecture arc of convert3Disp is
+	signal n0, n1, n2: unsigned(3 downto 0) := "0000";
+	
+	component convert2Disp7 is
+	
+	end component convert2Disp7;
+begin
+	n0 <= unsigned(num)/100;
+	n1 <= unsigned(num)/10 mod 10;
+	n2 <= unsigned(num) mod 10;
+	
+	process(num)
+	begin
+		
+	end process;
+end arc;

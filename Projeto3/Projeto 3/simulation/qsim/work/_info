@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\jeffi\Google Drive\01 - UFRN\2019.1\Lab. Sistemas Digitais\Unidade III\Projeto III\Projeto 3\simulation\qsim
+vproject3
+Z1 !s100 jcNHNY2BeF>XH_>=RcI2J0
+Z2 IMdV2F0SacdUfTIL36ikiJ2
+Z3 VT60JhQ37063l2THI5mnmz0
+Z4 dC:\Users\jeffi\Google Drive\01 - UFRN\2019.1\Lab. Sistemas Digitais\Unidade III\Projeto III\Projeto 3\simulation\qsim
+Z5 w1559935518
+Z6 8project3.vo
+Z7 Fproject3.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|project3.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1559935520.184000
+Z12 !s107 project3.vo|
+!s101 -O0
+vproject3_vlg_check_tst
+!i10b 1
+Z13 !s100 C7CN8]M[X[JLX=zDV_PZD0
+Z14 I3L4W6d0_2e<G;Z2f3[C[k1
+Z15 VeY0m5Bhhz3d_>HjH?=6HZ2
+R4
+Z16 w1559935516
+Z17 8project3.vt
+Z18 Fproject3.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z19 !s108 1559935521.028000
+Z20 !s107 project3.vt|
+Z21 !s90 -work|work|project3.vt|
+!s101 -O0
+R10
+vproject3_vlg_sample_tst
+!i10b 1
+Z22 !s100 Xi2oT:M;Pmcazh`7BOiFJ1
+Z23 Ij<>O@O>3``j?aZkccOhOd1
+Z24 V[6Lz0`Xz=>V[>H_C<z=>e3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vproject3_vlg_vec_tst
+!i10b 1
+!s100 EMCz_mkOGmj6T?h?iO_l?2
+I51FRk;o2mWkjNneZ4jSBS2
+Z25 VeaW>@>NePgRFDn3JMEIdd3
+R4
+R16
+R17
+R18
+Z26 L0 695
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

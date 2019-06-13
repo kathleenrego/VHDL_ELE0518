@@ -1,0 +1,16 @@
+
+State Machine - |project3|state
+Name state.show state.s_xnor state.s_xor state.s_not state.s_or state.s_and state.compare state.subtract state.add state.insertOp state.insert2 state.insert1 state.init 
+state.init 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.insert1 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.insert2 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.insertOp 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.add 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.subtract 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.compare 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.s_and 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.s_or 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.s_not 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.s_xor 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.s_xnor 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.show 1 0 0 0 0 0 0 0 0 0 0 0 1 

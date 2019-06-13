@@ -1,0 +1,346 @@
+$comment
+	File created using the following command:
+		vcd file convert2Disp7.msim.vcd -direction
+$end
+$date
+	Tue May 21 20:42:36 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module convert2Disp7_vlg_vec_tst $end
+$var reg 4 ! num [3:0] $end
+$var wire 1 " codeDisp [6] $end
+$var wire 1 # codeDisp [5] $end
+$var wire 1 $ codeDisp [4] $end
+$var wire 1 % codeDisp [3] $end
+$var wire 1 & codeDisp [2] $end
+$var wire 1 ' codeDisp [1] $end
+$var wire 1 ( codeDisp [0] $end
+$var wire 1 ) sampler $end
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 codeDisp~0_combout $end
+$var wire 1 1 codeDisp~1_combout $end
+$var wire 1 2 codeDisp~2_combout $end
+$var wire 1 3 codeDisp~3_combout $end
+$var wire 1 4 codeDisp~4_combout $end
+$var wire 1 5 codeDisp~5_combout $end
+$var wire 1 6 codeDisp~6_combout $end
+$var wire 1 7 num~combout [3] $end
+$var wire 1 8 num~combout [2] $end
+$var wire 1 9 num~combout [1] $end
+$var wire 1 : num~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0(
+0'
+0&
+0%
+0$
+0#
+1"
+x)
+0*
+1+
+x,
+1-
+1.
+1/
+00
+01
+12
+03
+04
+15
+16
+0:
+09
+08
+07
+$end
+#40000
+b1 !
+1:
+0)
+05
+14
+13
+10
+1$
+1%
+1(
+1#
+#80000
+b11 !
+b10 !
+0:
+19
+1)
+06
+04
+03
+02
+00
+0"
+0$
+0%
+0(
+1&
+#120000
+b11 !
+1:
+0)
+14
+12
+1$
+0&
+#160000
+b111 !
+b101 !
+b100 !
+0:
+09
+18
+1)
+15
+13
+10
+1%
+1(
+0#
+#200000
+b101 !
+1:
+0)
+03
+11
+00
+0%
+1'
+0(
+#240000
+b111 !
+b110 !
+0:
+19
+1)
+04
+0$
+#280000
+b111 !
+1:
+0)
+16
+05
+14
+13
+01
+1"
+1$
+1%
+0'
+1#
+#320000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+0:
+09
+08
+17
+1)
+06
+15
+04
+03
+0"
+0$
+0%
+0#
+#360000
+b1001 !
+1:
+0)
+14
+1$
+#400000
+b1011 !
+b1010 !
+0:
+19
+1)
+16
+05
+13
+02
+11
+10
+1"
+1%
+1'
+1(
+1#
+1&
+#440000
+b1011 !
+1:
+0)
+#480000
+b1111 !
+b1101 !
+b1100 !
+0:
+09
+18
+1)
+#520000
+b1101 !
+1:
+0)
+#560000
+b1111 !
+b1110 !
+0:
+19
+1)
+#600000
+b1111 !
+1:
+0)
+#640000
+b111 !
+b11 !
+b1 !
+b0 !
+0:
+09
+08
+07
+1)
+15
+04
+03
+12
+01
+00
+0$
+0%
+0'
+0(
+0#
+0&
+#680000
+b1 !
+1:
+0)
+05
+14
+13
+10
+1$
+1%
+1(
+1#
+#720000
+b11 !
+b10 !
+0:
+19
+1)
+06
+04
+03
+02
+00
+0"
+0$
+0%
+0(
+1&
+#760000
+b11 !
+1:
+0)
+14
+12
+1$
+0&
+#800000
+b111 !
+b101 !
+b100 !
+0:
+09
+18
+1)
+15
+13
+10
+1%
+1(
+0#
+#840000
+b101 !
+1:
+0)
+03
+11
+00
+0%
+1'
+0(
+#880000
+b111 !
+b110 !
+0:
+19
+1)
+04
+0$
+#920000
+b111 !
+1:
+0)
+16
+05
+14
+13
+01
+1"
+1$
+1%
+0'
+1#
+#960000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+0:
+09
+08
+17
+1)
+06
+15
+04
+03
+0"
+0$
+0%
+0#
+#1000000

@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity project3 is
+	port(
+		clk, rst, c: in std_logic;
+		op: in std_logic_vector (2 downto 0);
+		numIn: in std_logic_vector (4 downto 0);
+		Disp0, Disp1, Disp2: out std_logic_vector (6 downto 0)
+	);
+end project3;
+
+architecture behaviour of project3 is
+	type estado is (Init, Insert1, Insert2, InsertOp, Add, Subtract, Compare, S_and, S_or, S_not, S_xor, S_xnor, Show)
+	signal num1, num2: std_logic_vector(4 downto 0) := "00000"; 
+	signal state: estado := Init;
+begin
+	process(clk)
+		
+	end process;
+end behaviour;

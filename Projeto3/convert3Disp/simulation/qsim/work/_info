@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\jeffi\Google Drive\01 - UFRN\2019.1\Lab. Sistemas Digitais\Unidade III\Lab8\convert3Disp\simulation\qsim
+vconvert3Disp
+Z1 !s100 hF6_>PhdKKK^Gok85F[AU2
+Z2 I0>:RZ[kj>^RX>Ad=bz^cZ0
+Z3 V_UgRB?mJi7@CY9GMVal150
+Z4 dC:\Users\jeffi\Google Drive\01 - UFRN\2019.1\Lab. Sistemas Digitais\Unidade III\Lab8\convert3Disp\simulation\qsim
+Z5 w1558485935
+Z6 8convert3Disp.vo
+Z7 Fconvert3Disp.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|convert3Disp.vo|
+Z10 o-work work -O0
+Z11 nconvert3@disp
+!i10b 1
+!s85 0
+Z12 !s108 1558485937.173000
+Z13 !s107 convert3Disp.vo|
+!s101 -O0
+vconvert3Disp_vlg_check_tst
+!i10b 1
+Z14 !s100 V^5`^WgATOk4fS3z^h_^o3
+Z15 I>V[ZOGK^2h14ABG93]gf51
+Z16 VfW8=N[fRP[g8fdbB=nZKL3
+R4
+Z17 w1558485933
+Z18 8convert3Disp.vt
+Z19 Fconvert3Disp.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z20 !s108 1558485937.767000
+Z21 !s107 convert3Disp.vt|
+Z22 !s90 -work|work|convert3Disp.vt|
+!s101 -O0
+R10
+Z23 nconvert3@disp_vlg_check_tst
+vconvert3Disp_vlg_sample_tst
+!i10b 1
+Z24 !s100 c]iGdJR<<IW0AEg<I1fQg1
+Z25 Il>MiQJUMNM@KoSK]2>VD42
+Z26 V2M2Hf@8SMZ?679@L2AT@>3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 nconvert3@disp_vlg_sample_tst
+vconvert3Disp_vlg_vec_tst
+!i10b 1
+!s100 C4?cBYfgY80zFiI0dF>Cd0
+IV:jXYhm4Y?1XY1`5@jOIJ1
+Z28 VOC^Z00TdPoMha?Bn7XH`c2
+R4
+R17
+R18
+R19
+Z29 L0 527
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 nconvert3@disp_vlg_vec_tst
