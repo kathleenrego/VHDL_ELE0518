@@ -1,0 +1,72 @@
+|Lab7
+h => count.OUTPUTSELECT
+h => count.OUTPUTSELECT
+h => Selector9.IN5
+h => Selector8.IN5
+h => Selector7.IN5
+h => Selector10.IN5
+h => Selector11.IN5
+h => Selector6.IN6
+h => Selector7.IN6
+h => Selector8.IN6
+h => Selector9.IN6
+h => Selector10.IN6
+h => Selector11.IN6
+h => Selector0.IN0
+h => Selector1.IN0
+h => Selector2.IN0
+h => Selector3.IN0
+h => Selector4.IN0
+h => Selector5.IN0
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => s.OUTPUTSELECT
+rst => s.OUTPUTSELECT
+rst => s.OUTPUTSELECT
+rst => s.OUTPUTSELECT
+rst => s.OUTPUTSELECT
+clkInput => ClockDiv:clockDivider.clkIn
+s[0] <= s[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= s[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab7|ClockDiv:clockDivider
+clkIn => count[0].CLK
+clkIn => count[1].CLK
+clkIn => count[2].CLK
+clkIn => count[3].CLK
+clkIn => count[4].CLK
+clkIn => count[5].CLK
+clkIn => count[6].CLK
+clkIn => count[7].CLK
+clkIn => count[8].CLK
+clkIn => count[9].CLK
+clkIn => count[10].CLK
+clkIn => count[11].CLK
+clkIn => count[12].CLK
+clkIn => count[13].CLK
+clkIn => count[14].CLK
+clkIn => count[15].CLK
+clkIn => count[16].CLK
+clkIn => count[17].CLK
+clkIn => count[18].CLK
+clkIn => count[19].CLK
+clkIn => count[20].CLK
+clkIn => count[21].CLK
+clkIn => count[22].CLK
+clkIn => count[23].CLK
+clkIn => count[24].CLK
+clkIn => count[25].CLK
+clkOut <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

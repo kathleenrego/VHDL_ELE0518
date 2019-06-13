@@ -1,0 +1,10 @@
+
+State Machine - |Lab7|state
+Name state.E6 state.E5 state.E4 state.E3 state.E2 state.E1 state.E0 
+state.E0 0 0 0 0 0 0 0 
+state.E1 0 0 0 0 0 1 1 
+state.E2 0 0 0 0 1 0 1 
+state.E3 0 0 0 1 0 0 1 
+state.E4 0 0 1 0 0 0 1 
+state.E5 0 1 0 0 0 0 1 
+state.E6 1 0 0 0 0 0 1 

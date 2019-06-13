@@ -1,0 +1,77 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mde is
+   port(
+	   h, rst, clk: in std_logic;
+		s: out std_logic_vector(4 downto 0)
+	);
+end mde;
+
+architecture mde_arc of mde is
+   type estado is (E0, E1, E2, E3, E4, E5, E6)
+   signal i: integer;
+	signal estado_atual, estado_proximo: estado;
+	constant num_cycles: integer := "3";
+	
+	begin
+	
+	registrador: process(clk, rst)
+	   begin
+		   if (rst = '1' and rising_edge(clk)) then
+			   estado_atual <= E0;
+				i := "0";
+		   elsif (rst = '0' and rising_edge(clk)) then
+			   estado_atual <= estado_proximo;
+			end if;
+	end process registrador;
+	
+	logica: process(h, estado_atual)
+	   case estado_atual is
+		   when E0 =>
+			   s <= "00000";
+			   if (h = '0') then
+				   estado_proximo <= E0;
+				else estado_proximo <= E1;
+			   end if;	
+			when E1 =>
+			   s <= "10000";
+				if (h = '0') then
+				   estado_proximo <= E0;
+			   else estado_proximo <= E2;
+				end if;
+			when E2 =>
+			   s <= "01000";
+			   if (h = '0') then
+				   estado_proximo <= E0;
+			   else estado_proximo <= E3;
+				end if;
+			when E3 =>
+			   s <= "00100";
+			   if (h = '0') then
+				   estado_proximo <= E0;
+			   else estado_proximo <= E4;
+			when E4 =>
+			   s <= "00010";
+			   if (h = '0') then
+				   estado_proximo <= E0;
+			   else estado_proximo <= E5;
+				end if;
+			when E5 =>
+			   s <= "00001";
+				if (i = num_cycles) then
+				   estado_proximo <= E6;
+			   else 
+				   estado_proximo <= E0;
+				   i <= i + 1;
+			   end if;
+			when E6 =>
+			   s <= "11111";
+			   if (h = '0') then
+				   estado_proximo <= E0;
+			   else estado_proximo <= E6;
+				end if;
+		end case;
+	end process logica;
+	
+end mde_arc;

@@ -1,0 +1,477 @@
+Simulator report for Lab7
+Thu May 16 22:42:31 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 5.0 us       ;
+; Simulation Netlist Size     ; 163 nodes    ;
+; Simulation Coverage         ;       6.79 % ;
+; Total Number of Transitions ; 72           ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                                   ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                                 ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                              ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                                    ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                                     ;               ;
+; Vector input source                                                                        ; C:/Users/jeffi/Google Drive/01 - UFRN/2019.1/Lab. Sistemas Digitais/Unidade III/Lab7/Lab7/Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                                      ; On            ;
+; Check outputs                                                                              ; Off                                                                                                     ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                                      ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                                      ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                                      ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                                      ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                                     ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                                     ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                     ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                                     ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                     ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                                     ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                      ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                              ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                     ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                     ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                                    ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       6.79 % ;
+; Total nodes checked                                 ; 163          ;
+; Total output ports checked                          ; 162          ;
+; Total output ports with complete 1/0-value coverage ; 11           ;
+; Total output ports with no 1/0-value coverage       ; 151          ;
+; Total output ports with no 1-value coverage         ; 151          ;
+; Total output ports with no 0-value coverage         ; 151          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------+
+; Complete 1/0-Value Coverage                              ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |Lab7|state~0     ; |Lab7|state~0     ; out              ;
+; |Lab7|state~1     ; |Lab7|state~1     ; out              ;
+; |Lab7|s~0         ; |Lab7|s~0         ; out              ;
+; |Lab7|h           ; |Lab7|h           ; out              ;
+; |Lab7|rst         ; |Lab7|rst         ; out              ;
+; |Lab7|state.E0~0  ; |Lab7|state.E0~0  ; out0             ;
+; |Lab7|state.E1~0  ; |Lab7|state.E1~0  ; out0             ;
+; |Lab7|Selector0~1 ; |Lab7|Selector0~1 ; out              ;
+; |Lab7|Selector1~0 ; |Lab7|Selector1~0 ; out0             ;
+; |Lab7|Selector7~0 ; |Lab7|Selector7~0 ; out0             ;
+; |Lab7|Selector7~3 ; |Lab7|Selector7~3 ; out0             ;
++-------------------+-------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |Lab7|state.E0                        ; |Lab7|state.E0                        ; regout           ;
+; |Lab7|state.E1                        ; |Lab7|state.E1                        ; regout           ;
+; |Lab7|state.E2                        ; |Lab7|state.E2                        ; regout           ;
+; |Lab7|state.E3                        ; |Lab7|state.E3                        ; regout           ;
+; |Lab7|state.E4                        ; |Lab7|state.E4                        ; regout           ;
+; |Lab7|state.E5                        ; |Lab7|state.E5                        ; regout           ;
+; |Lab7|state.E6                        ; |Lab7|state.E6                        ; regout           ;
+; |Lab7|s[4]~reg0                       ; |Lab7|s[4]~reg0                       ; regout           ;
+; |Lab7|s[3]~reg0                       ; |Lab7|s[3]~reg0                       ; regout           ;
+; |Lab7|s[2]~reg0                       ; |Lab7|s[2]~reg0                       ; regout           ;
+; |Lab7|s[1]~reg0                       ; |Lab7|s[1]~reg0                       ; regout           ;
+; |Lab7|s[0]~reg0                       ; |Lab7|s[0]~reg0                       ; regout           ;
+; |Lab7|count[1]                        ; |Lab7|count[1]                        ; regout           ;
+; |Lab7|count[0]                        ; |Lab7|count[0]                        ; regout           ;
+; |Lab7|count~0                         ; |Lab7|count~0                         ; out              ;
+; |Lab7|count~1                         ; |Lab7|count~1                         ; out              ;
+; |Lab7|state~2                         ; |Lab7|state~2                         ; out              ;
+; |Lab7|state~3                         ; |Lab7|state~3                         ; out              ;
+; |Lab7|state~4                         ; |Lab7|state~4                         ; out              ;
+; |Lab7|state~5                         ; |Lab7|state~5                         ; out              ;
+; |Lab7|state~6                         ; |Lab7|state~6                         ; out              ;
+; |Lab7|s~1                             ; |Lab7|s~1                             ; out              ;
+; |Lab7|s~2                             ; |Lab7|s~2                             ; out              ;
+; |Lab7|s~3                             ; |Lab7|s~3                             ; out              ;
+; |Lab7|s~4                             ; |Lab7|s~4                             ; out              ;
+; |Lab7|count~2                         ; |Lab7|count~2                         ; out              ;
+; |Lab7|count~3                         ; |Lab7|count~3                         ; out              ;
+; |Lab7|clkInput                        ; |Lab7|clkInput                        ; out              ;
+; |Lab7|s[0]                            ; |Lab7|s[0]                            ; pin_out          ;
+; |Lab7|s[1]                            ; |Lab7|s[1]                            ; pin_out          ;
+; |Lab7|s[2]                            ; |Lab7|s[2]                            ; pin_out          ;
+; |Lab7|s[3]                            ; |Lab7|s[3]                            ; pin_out          ;
+; |Lab7|s[4]                            ; |Lab7|s[4]                            ; pin_out          ;
+; |Lab7|state~7                         ; |Lab7|state~7                         ; out0             ;
+; |Lab7|Selector6~0                     ; |Lab7|Selector6~0                     ; out0             ;
+; |Lab7|Selector6~1                     ; |Lab7|Selector6~1                     ; out0             ;
+; |Lab7|state.E2~0                      ; |Lab7|state.E2~0                      ; out0             ;
+; |Lab7|Selector6~2                     ; |Lab7|Selector6~2                     ; out0             ;
+; |Lab7|state.E3~0                      ; |Lab7|state.E3~0                      ; out0             ;
+; |Lab7|Selector6~3                     ; |Lab7|Selector6~3                     ; out0             ;
+; |Lab7|state.E4~0                      ; |Lab7|state.E4~0                      ; out0             ;
+; |Lab7|Selector6~4                     ; |Lab7|Selector6~4                     ; out0             ;
+; |Lab7|state.E5~0                      ; |Lab7|state.E5~0                      ; out0             ;
+; |Lab7|Selector0~0                     ; |Lab7|Selector0~0                     ; out0             ;
+; |Lab7|state.E6~0                      ; |Lab7|state.E6~0                      ; out0             ;
+; |Lab7|Selector6~5                     ; |Lab7|Selector6~5                     ; out0             ;
+; |Lab7|ClockDiv:clockDivider|count[25] ; |Lab7|ClockDiv:clockDivider|count[25] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[24] ; |Lab7|ClockDiv:clockDivider|count[24] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[23] ; |Lab7|ClockDiv:clockDivider|count[23] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[22] ; |Lab7|ClockDiv:clockDivider|count[22] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[21] ; |Lab7|ClockDiv:clockDivider|count[21] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[20] ; |Lab7|ClockDiv:clockDivider|count[20] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[19] ; |Lab7|ClockDiv:clockDivider|count[19] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[18] ; |Lab7|ClockDiv:clockDivider|count[18] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[17] ; |Lab7|ClockDiv:clockDivider|count[17] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[16] ; |Lab7|ClockDiv:clockDivider|count[16] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[15] ; |Lab7|ClockDiv:clockDivider|count[15] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[14] ; |Lab7|ClockDiv:clockDivider|count[14] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[13] ; |Lab7|ClockDiv:clockDivider|count[13] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[12] ; |Lab7|ClockDiv:clockDivider|count[12] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[11] ; |Lab7|ClockDiv:clockDivider|count[11] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[10] ; |Lab7|ClockDiv:clockDivider|count[10] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[9]  ; |Lab7|ClockDiv:clockDivider|count[9]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[8]  ; |Lab7|ClockDiv:clockDivider|count[8]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[7]  ; |Lab7|ClockDiv:clockDivider|count[7]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[6]  ; |Lab7|ClockDiv:clockDivider|count[6]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[5]  ; |Lab7|ClockDiv:clockDivider|count[5]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[4]  ; |Lab7|ClockDiv:clockDivider|count[4]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[3]  ; |Lab7|ClockDiv:clockDivider|count[3]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[2]  ; |Lab7|ClockDiv:clockDivider|count[2]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[1]  ; |Lab7|ClockDiv:clockDivider|count[1]  ; regout           ;
+; |Lab7|Selector2~0                     ; |Lab7|Selector2~0                     ; out0             ;
+; |Lab7|Selector3~0                     ; |Lab7|Selector3~0                     ; out0             ;
+; |Lab7|Selector4~0                     ; |Lab7|Selector4~0                     ; out0             ;
+; |Lab7|Selector5~0                     ; |Lab7|Selector5~0                     ; out0             ;
+; |Lab7|Selector6~6                     ; |Lab7|Selector6~6                     ; out0             ;
+; |Lab7|Selector6~7                     ; |Lab7|Selector6~7                     ; out0             ;
+; |Lab7|Selector6~8                     ; |Lab7|Selector6~8                     ; out0             ;
+; |Lab7|Selector7~1                     ; |Lab7|Selector7~1                     ; out0             ;
+; |Lab7|Selector7~2                     ; |Lab7|Selector7~2                     ; out0             ;
+; |Lab7|Selector8~0                     ; |Lab7|Selector8~0                     ; out0             ;
+; |Lab7|Selector8~1                     ; |Lab7|Selector8~1                     ; out0             ;
+; |Lab7|Selector8~2                     ; |Lab7|Selector8~2                     ; out0             ;
+; |Lab7|Selector8~3                     ; |Lab7|Selector8~3                     ; out0             ;
+; |Lab7|Selector9~0                     ; |Lab7|Selector9~0                     ; out0             ;
+; |Lab7|Selector9~1                     ; |Lab7|Selector9~1                     ; out0             ;
+; |Lab7|Selector9~2                     ; |Lab7|Selector9~2                     ; out0             ;
+; |Lab7|Selector9~3                     ; |Lab7|Selector9~3                     ; out0             ;
+; |Lab7|Selector10~0                    ; |Lab7|Selector10~0                    ; out0             ;
+; |Lab7|Selector10~1                    ; |Lab7|Selector10~1                    ; out0             ;
+; |Lab7|Selector10~2                    ; |Lab7|Selector10~2                    ; out0             ;
+; |Lab7|Selector10~3                    ; |Lab7|Selector10~3                    ; out0             ;
+; |Lab7|Selector11~0                    ; |Lab7|Selector11~0                    ; out0             ;
+; |Lab7|Selector11~1                    ; |Lab7|Selector11~1                    ; out0             ;
+; |Lab7|Selector11~2                    ; |Lab7|Selector11~2                    ; out0             ;
+; |Lab7|Selector11~3                    ; |Lab7|Selector11~3                    ; out0             ;
+; |Lab7|Selector12~0                    ; |Lab7|Selector12~0                    ; out              ;
+; |Lab7|Selector12~1                    ; |Lab7|Selector12~1                    ; out              ;
+; |Lab7|Selector13~0                    ; |Lab7|Selector13~0                    ; out              ;
+; |Lab7|Selector13~1                    ; |Lab7|Selector13~1                    ; out              ;
+; |Lab7|Add0~0                          ; |Lab7|Add0~0                          ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~0    ; |Lab7|ClockDiv:clockDivider|Add0~0    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~1    ; |Lab7|ClockDiv:clockDivider|Add0~1    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~2    ; |Lab7|ClockDiv:clockDivider|Add0~2    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~3    ; |Lab7|ClockDiv:clockDivider|Add0~3    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~4    ; |Lab7|ClockDiv:clockDivider|Add0~4    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~5    ; |Lab7|ClockDiv:clockDivider|Add0~5    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~6    ; |Lab7|ClockDiv:clockDivider|Add0~6    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~7    ; |Lab7|ClockDiv:clockDivider|Add0~7    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~8    ; |Lab7|ClockDiv:clockDivider|Add0~8    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~9    ; |Lab7|ClockDiv:clockDivider|Add0~9    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~10   ; |Lab7|ClockDiv:clockDivider|Add0~10   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~11   ; |Lab7|ClockDiv:clockDivider|Add0~11   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~12   ; |Lab7|ClockDiv:clockDivider|Add0~12   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~13   ; |Lab7|ClockDiv:clockDivider|Add0~13   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~14   ; |Lab7|ClockDiv:clockDivider|Add0~14   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~15   ; |Lab7|ClockDiv:clockDivider|Add0~15   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~16   ; |Lab7|ClockDiv:clockDivider|Add0~16   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~17   ; |Lab7|ClockDiv:clockDivider|Add0~17   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~18   ; |Lab7|ClockDiv:clockDivider|Add0~18   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~19   ; |Lab7|ClockDiv:clockDivider|Add0~19   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~20   ; |Lab7|ClockDiv:clockDivider|Add0~20   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~21   ; |Lab7|ClockDiv:clockDivider|Add0~21   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~22   ; |Lab7|ClockDiv:clockDivider|Add0~22   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~23   ; |Lab7|ClockDiv:clockDivider|Add0~23   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~24   ; |Lab7|ClockDiv:clockDivider|Add0~24   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~25   ; |Lab7|ClockDiv:clockDivider|Add0~25   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~26   ; |Lab7|ClockDiv:clockDivider|Add0~26   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~27   ; |Lab7|ClockDiv:clockDivider|Add0~27   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~28   ; |Lab7|ClockDiv:clockDivider|Add0~28   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~29   ; |Lab7|ClockDiv:clockDivider|Add0~29   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~30   ; |Lab7|ClockDiv:clockDivider|Add0~30   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~31   ; |Lab7|ClockDiv:clockDivider|Add0~31   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~32   ; |Lab7|ClockDiv:clockDivider|Add0~32   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~33   ; |Lab7|ClockDiv:clockDivider|Add0~33   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~34   ; |Lab7|ClockDiv:clockDivider|Add0~34   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~35   ; |Lab7|ClockDiv:clockDivider|Add0~35   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~36   ; |Lab7|ClockDiv:clockDivider|Add0~36   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~37   ; |Lab7|ClockDiv:clockDivider|Add0~37   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~38   ; |Lab7|ClockDiv:clockDivider|Add0~38   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~39   ; |Lab7|ClockDiv:clockDivider|Add0~39   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~40   ; |Lab7|ClockDiv:clockDivider|Add0~40   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~41   ; |Lab7|ClockDiv:clockDivider|Add0~41   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~42   ; |Lab7|ClockDiv:clockDivider|Add0~42   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~43   ; |Lab7|ClockDiv:clockDivider|Add0~43   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~44   ; |Lab7|ClockDiv:clockDivider|Add0~44   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~45   ; |Lab7|ClockDiv:clockDivider|Add0~45   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~46   ; |Lab7|ClockDiv:clockDivider|Add0~46   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~47   ; |Lab7|ClockDiv:clockDivider|Add0~47   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~48   ; |Lab7|ClockDiv:clockDivider|Add0~48   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Equal0~0  ; |Lab7|ClockDiv:clockDivider|Equal0~0  ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |Lab7|state.E0                        ; |Lab7|state.E0                        ; regout           ;
+; |Lab7|state.E1                        ; |Lab7|state.E1                        ; regout           ;
+; |Lab7|state.E2                        ; |Lab7|state.E2                        ; regout           ;
+; |Lab7|state.E3                        ; |Lab7|state.E3                        ; regout           ;
+; |Lab7|state.E4                        ; |Lab7|state.E4                        ; regout           ;
+; |Lab7|state.E5                        ; |Lab7|state.E5                        ; regout           ;
+; |Lab7|state.E6                        ; |Lab7|state.E6                        ; regout           ;
+; |Lab7|s[4]~reg0                       ; |Lab7|s[4]~reg0                       ; regout           ;
+; |Lab7|s[3]~reg0                       ; |Lab7|s[3]~reg0                       ; regout           ;
+; |Lab7|s[2]~reg0                       ; |Lab7|s[2]~reg0                       ; regout           ;
+; |Lab7|s[1]~reg0                       ; |Lab7|s[1]~reg0                       ; regout           ;
+; |Lab7|s[0]~reg0                       ; |Lab7|s[0]~reg0                       ; regout           ;
+; |Lab7|count[1]                        ; |Lab7|count[1]                        ; regout           ;
+; |Lab7|count[0]                        ; |Lab7|count[0]                        ; regout           ;
+; |Lab7|count~0                         ; |Lab7|count~0                         ; out              ;
+; |Lab7|count~1                         ; |Lab7|count~1                         ; out              ;
+; |Lab7|state~2                         ; |Lab7|state~2                         ; out              ;
+; |Lab7|state~3                         ; |Lab7|state~3                         ; out              ;
+; |Lab7|state~4                         ; |Lab7|state~4                         ; out              ;
+; |Lab7|state~5                         ; |Lab7|state~5                         ; out              ;
+; |Lab7|state~6                         ; |Lab7|state~6                         ; out              ;
+; |Lab7|s~1                             ; |Lab7|s~1                             ; out              ;
+; |Lab7|s~2                             ; |Lab7|s~2                             ; out              ;
+; |Lab7|s~3                             ; |Lab7|s~3                             ; out              ;
+; |Lab7|s~4                             ; |Lab7|s~4                             ; out              ;
+; |Lab7|count~2                         ; |Lab7|count~2                         ; out              ;
+; |Lab7|count~3                         ; |Lab7|count~3                         ; out              ;
+; |Lab7|clkInput                        ; |Lab7|clkInput                        ; out              ;
+; |Lab7|s[0]                            ; |Lab7|s[0]                            ; pin_out          ;
+; |Lab7|s[1]                            ; |Lab7|s[1]                            ; pin_out          ;
+; |Lab7|s[2]                            ; |Lab7|s[2]                            ; pin_out          ;
+; |Lab7|s[3]                            ; |Lab7|s[3]                            ; pin_out          ;
+; |Lab7|s[4]                            ; |Lab7|s[4]                            ; pin_out          ;
+; |Lab7|state~7                         ; |Lab7|state~7                         ; out0             ;
+; |Lab7|Selector6~0                     ; |Lab7|Selector6~0                     ; out0             ;
+; |Lab7|Selector6~1                     ; |Lab7|Selector6~1                     ; out0             ;
+; |Lab7|state.E2~0                      ; |Lab7|state.E2~0                      ; out0             ;
+; |Lab7|Selector6~2                     ; |Lab7|Selector6~2                     ; out0             ;
+; |Lab7|state.E3~0                      ; |Lab7|state.E3~0                      ; out0             ;
+; |Lab7|Selector6~3                     ; |Lab7|Selector6~3                     ; out0             ;
+; |Lab7|state.E4~0                      ; |Lab7|state.E4~0                      ; out0             ;
+; |Lab7|Selector6~4                     ; |Lab7|Selector6~4                     ; out0             ;
+; |Lab7|state.E5~0                      ; |Lab7|state.E5~0                      ; out0             ;
+; |Lab7|Selector0~0                     ; |Lab7|Selector0~0                     ; out0             ;
+; |Lab7|state.E6~0                      ; |Lab7|state.E6~0                      ; out0             ;
+; |Lab7|Selector6~5                     ; |Lab7|Selector6~5                     ; out0             ;
+; |Lab7|ClockDiv:clockDivider|count[25] ; |Lab7|ClockDiv:clockDivider|count[25] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[24] ; |Lab7|ClockDiv:clockDivider|count[24] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[23] ; |Lab7|ClockDiv:clockDivider|count[23] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[22] ; |Lab7|ClockDiv:clockDivider|count[22] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[21] ; |Lab7|ClockDiv:clockDivider|count[21] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[20] ; |Lab7|ClockDiv:clockDivider|count[20] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[19] ; |Lab7|ClockDiv:clockDivider|count[19] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[18] ; |Lab7|ClockDiv:clockDivider|count[18] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[17] ; |Lab7|ClockDiv:clockDivider|count[17] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[16] ; |Lab7|ClockDiv:clockDivider|count[16] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[15] ; |Lab7|ClockDiv:clockDivider|count[15] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[14] ; |Lab7|ClockDiv:clockDivider|count[14] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[13] ; |Lab7|ClockDiv:clockDivider|count[13] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[12] ; |Lab7|ClockDiv:clockDivider|count[12] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[11] ; |Lab7|ClockDiv:clockDivider|count[11] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[10] ; |Lab7|ClockDiv:clockDivider|count[10] ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[9]  ; |Lab7|ClockDiv:clockDivider|count[9]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[8]  ; |Lab7|ClockDiv:clockDivider|count[8]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[7]  ; |Lab7|ClockDiv:clockDivider|count[7]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[6]  ; |Lab7|ClockDiv:clockDivider|count[6]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[5]  ; |Lab7|ClockDiv:clockDivider|count[5]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[4]  ; |Lab7|ClockDiv:clockDivider|count[4]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[3]  ; |Lab7|ClockDiv:clockDivider|count[3]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[2]  ; |Lab7|ClockDiv:clockDivider|count[2]  ; regout           ;
+; |Lab7|ClockDiv:clockDivider|count[1]  ; |Lab7|ClockDiv:clockDivider|count[1]  ; regout           ;
+; |Lab7|Selector2~0                     ; |Lab7|Selector2~0                     ; out0             ;
+; |Lab7|Selector3~0                     ; |Lab7|Selector3~0                     ; out0             ;
+; |Lab7|Selector4~0                     ; |Lab7|Selector4~0                     ; out0             ;
+; |Lab7|Selector5~0                     ; |Lab7|Selector5~0                     ; out0             ;
+; |Lab7|Selector6~6                     ; |Lab7|Selector6~6                     ; out0             ;
+; |Lab7|Selector6~7                     ; |Lab7|Selector6~7                     ; out0             ;
+; |Lab7|Selector6~8                     ; |Lab7|Selector6~8                     ; out0             ;
+; |Lab7|Selector7~1                     ; |Lab7|Selector7~1                     ; out0             ;
+; |Lab7|Selector7~2                     ; |Lab7|Selector7~2                     ; out0             ;
+; |Lab7|Selector8~0                     ; |Lab7|Selector8~0                     ; out0             ;
+; |Lab7|Selector8~1                     ; |Lab7|Selector8~1                     ; out0             ;
+; |Lab7|Selector8~2                     ; |Lab7|Selector8~2                     ; out0             ;
+; |Lab7|Selector8~3                     ; |Lab7|Selector8~3                     ; out0             ;
+; |Lab7|Selector9~0                     ; |Lab7|Selector9~0                     ; out0             ;
+; |Lab7|Selector9~1                     ; |Lab7|Selector9~1                     ; out0             ;
+; |Lab7|Selector9~2                     ; |Lab7|Selector9~2                     ; out0             ;
+; |Lab7|Selector9~3                     ; |Lab7|Selector9~3                     ; out0             ;
+; |Lab7|Selector10~0                    ; |Lab7|Selector10~0                    ; out0             ;
+; |Lab7|Selector10~1                    ; |Lab7|Selector10~1                    ; out0             ;
+; |Lab7|Selector10~2                    ; |Lab7|Selector10~2                    ; out0             ;
+; |Lab7|Selector10~3                    ; |Lab7|Selector10~3                    ; out0             ;
+; |Lab7|Selector11~0                    ; |Lab7|Selector11~0                    ; out0             ;
+; |Lab7|Selector11~1                    ; |Lab7|Selector11~1                    ; out0             ;
+; |Lab7|Selector11~2                    ; |Lab7|Selector11~2                    ; out0             ;
+; |Lab7|Selector11~3                    ; |Lab7|Selector11~3                    ; out0             ;
+; |Lab7|Selector12~0                    ; |Lab7|Selector12~0                    ; out              ;
+; |Lab7|Selector12~1                    ; |Lab7|Selector12~1                    ; out              ;
+; |Lab7|Selector13~0                    ; |Lab7|Selector13~0                    ; out              ;
+; |Lab7|Selector13~1                    ; |Lab7|Selector13~1                    ; out              ;
+; |Lab7|Add0~0                          ; |Lab7|Add0~0                          ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~0    ; |Lab7|ClockDiv:clockDivider|Add0~0    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~1    ; |Lab7|ClockDiv:clockDivider|Add0~1    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~2    ; |Lab7|ClockDiv:clockDivider|Add0~2    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~3    ; |Lab7|ClockDiv:clockDivider|Add0~3    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~4    ; |Lab7|ClockDiv:clockDivider|Add0~4    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~5    ; |Lab7|ClockDiv:clockDivider|Add0~5    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~6    ; |Lab7|ClockDiv:clockDivider|Add0~6    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~7    ; |Lab7|ClockDiv:clockDivider|Add0~7    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~8    ; |Lab7|ClockDiv:clockDivider|Add0~8    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~9    ; |Lab7|ClockDiv:clockDivider|Add0~9    ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~10   ; |Lab7|ClockDiv:clockDivider|Add0~10   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~11   ; |Lab7|ClockDiv:clockDivider|Add0~11   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~12   ; |Lab7|ClockDiv:clockDivider|Add0~12   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~13   ; |Lab7|ClockDiv:clockDivider|Add0~13   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~14   ; |Lab7|ClockDiv:clockDivider|Add0~14   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~15   ; |Lab7|ClockDiv:clockDivider|Add0~15   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~16   ; |Lab7|ClockDiv:clockDivider|Add0~16   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~17   ; |Lab7|ClockDiv:clockDivider|Add0~17   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~18   ; |Lab7|ClockDiv:clockDivider|Add0~18   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~19   ; |Lab7|ClockDiv:clockDivider|Add0~19   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~20   ; |Lab7|ClockDiv:clockDivider|Add0~20   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~21   ; |Lab7|ClockDiv:clockDivider|Add0~21   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~22   ; |Lab7|ClockDiv:clockDivider|Add0~22   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~23   ; |Lab7|ClockDiv:clockDivider|Add0~23   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~24   ; |Lab7|ClockDiv:clockDivider|Add0~24   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~25   ; |Lab7|ClockDiv:clockDivider|Add0~25   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~26   ; |Lab7|ClockDiv:clockDivider|Add0~26   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~27   ; |Lab7|ClockDiv:clockDivider|Add0~27   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~28   ; |Lab7|ClockDiv:clockDivider|Add0~28   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~29   ; |Lab7|ClockDiv:clockDivider|Add0~29   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~30   ; |Lab7|ClockDiv:clockDivider|Add0~30   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~31   ; |Lab7|ClockDiv:clockDivider|Add0~31   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~32   ; |Lab7|ClockDiv:clockDivider|Add0~32   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~33   ; |Lab7|ClockDiv:clockDivider|Add0~33   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~34   ; |Lab7|ClockDiv:clockDivider|Add0~34   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~35   ; |Lab7|ClockDiv:clockDivider|Add0~35   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~36   ; |Lab7|ClockDiv:clockDivider|Add0~36   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~37   ; |Lab7|ClockDiv:clockDivider|Add0~37   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~38   ; |Lab7|ClockDiv:clockDivider|Add0~38   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~39   ; |Lab7|ClockDiv:clockDivider|Add0~39   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~40   ; |Lab7|ClockDiv:clockDivider|Add0~40   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~41   ; |Lab7|ClockDiv:clockDivider|Add0~41   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~42   ; |Lab7|ClockDiv:clockDivider|Add0~42   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~43   ; |Lab7|ClockDiv:clockDivider|Add0~43   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~44   ; |Lab7|ClockDiv:clockDivider|Add0~44   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~45   ; |Lab7|ClockDiv:clockDivider|Add0~45   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~46   ; |Lab7|ClockDiv:clockDivider|Add0~46   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~47   ; |Lab7|ClockDiv:clockDivider|Add0~47   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Add0~48   ; |Lab7|ClockDiv:clockDivider|Add0~48   ; out0             ;
+; |Lab7|ClockDiv:clockDivider|Equal0~0  ; |Lab7|ClockDiv:clockDivider|Equal0~0  ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu May 16 22:42:28 2019
+Info: Command: quartus_sim --simulation_results_format=VWF Lab7 -c Lab7
+Info (324025): Using vector source file "C:/Users/jeffi/Google Drive/01 - UFRN/2019.1/Lab. Sistemas Digitais/Unidade III/Lab7/Lab7/Waveform1.vwf"
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "clk" in design.
+Warning (328012): Can't find signal in vector source file for input pin "|Lab7|clkInput"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is       6.79 %
+Info (328052): Number of transitions in simulation is 72
+Info (324045): Vector file Lab7.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4461 megabytes
+    Info: Processing ended: Thu May 16 22:42:31 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+

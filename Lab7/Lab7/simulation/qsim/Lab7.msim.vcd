@@ -1,0 +1,364 @@
+$comment
+	File created using the following command:
+		vcd file Lab7.msim.vcd -direction
+$end
+$date
+	Thu May 16 22:41:44 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Lab7_vlg_vec_tst $end
+$var reg 1 ! clkInput $end
+$var reg 1 " h $end
+$var reg 1 # rst $end
+$var wire 1 $ s [4] $end
+$var wire 1 % s [3] $end
+$var wire 1 & s [2] $end
+$var wire 1 ' s [1] $end
+$var wire 1 ( s [0] $end
+$var wire 1 ) sampler $end
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 clockDivider|count[1]~25_combout $end
+$var wire 1 1 clockDivider|count[2]~27_combout $end
+$var wire 1 2 clockDivider|count[3]~29_combout $end
+$var wire 1 3 clockDivider|count[4]~31_combout $end
+$var wire 1 4 clockDivider|count[5]~33_combout $end
+$var wire 1 5 clockDivider|count[6]~35_combout $end
+$var wire 1 6 clockDivider|count[7]~37_combout $end
+$var wire 1 7 clockDivider|count[8]~39_combout $end
+$var wire 1 8 clockDivider|count[9]~41_combout $end
+$var wire 1 9 clockDivider|count[10]~43_combout $end
+$var wire 1 : clockDivider|count[11]~45_combout $end
+$var wire 1 ; clockDivider|count[12]~47_combout $end
+$var wire 1 < clockDivider|count[13]~49_combout $end
+$var wire 1 = clockDivider|count[14]~51_combout $end
+$var wire 1 > clockDivider|count[15]~53_combout $end
+$var wire 1 ? clockDivider|count[17]~57_combout $end
+$var wire 1 @ clockDivider|count[20]~63_combout $end
+$var wire 1 A clockDivider|count[24]~72 $end
+$var wire 1 B clockDivider|count[25]~73_combout $end
+$var wire 1 C Selector11~0_combout $end
+$var wire 1 D clockDivider|Equal0~0_combout $end
+$var wire 1 E clockDivider|Equal0~1_combout $end
+$var wire 1 F clockDivider|Equal0~2_combout $end
+$var wire 1 G clockDivider|Equal0~3_combout $end
+$var wire 1 H clockDivider|Equal0~4_combout $end
+$var wire 1 I clkInput~combout $end
+$var wire 1 J clockDivider|count[0]~75_combout $end
+$var wire 1 K clockDivider|count[1]~26 $end
+$var wire 1 L clockDivider|count[2]~28 $end
+$var wire 1 M clockDivider|count[3]~30 $end
+$var wire 1 N clockDivider|count[4]~32 $end
+$var wire 1 O clockDivider|count[5]~34 $end
+$var wire 1 P clockDivider|count[6]~36 $end
+$var wire 1 Q clockDivider|count[7]~38 $end
+$var wire 1 R clockDivider|count[8]~40 $end
+$var wire 1 S clockDivider|count[9]~42 $end
+$var wire 1 T clockDivider|count[10]~44 $end
+$var wire 1 U clockDivider|count[11]~46 $end
+$var wire 1 V clockDivider|count[12]~48 $end
+$var wire 1 W clockDivider|count[13]~50 $end
+$var wire 1 X clockDivider|count[14]~52 $end
+$var wire 1 Y clockDivider|count[15]~54 $end
+$var wire 1 Z clockDivider|count[16]~56 $end
+$var wire 1 [ clockDivider|count[17]~58 $end
+$var wire 1 \ clockDivider|count[18]~60 $end
+$var wire 1 ] clockDivider|count[19]~61_combout $end
+$var wire 1 ^ clockDivider|count[16]~55_combout $end
+$var wire 1 _ clockDivider|count[18]~59_combout $end
+$var wire 1 ` clockDivider|Equal0~5_combout $end
+$var wire 1 a clockDivider|count[19]~62 $end
+$var wire 1 b clockDivider|count[20]~64 $end
+$var wire 1 c clockDivider|count[21]~65_combout $end
+$var wire 1 d clockDivider|count[21]~66 $end
+$var wire 1 e clockDivider|count[22]~67_combout $end
+$var wire 1 f clockDivider|count[22]~68 $end
+$var wire 1 g clockDivider|count[23]~69_combout $end
+$var wire 1 h clockDivider|Equal0~6_combout $end
+$var wire 1 i clockDivider|count[23]~70 $end
+$var wire 1 j clockDivider|count[24]~71_combout $end
+$var wire 1 k clockDivider|Equal0~7_combout $end
+$var wire 1 l clockDivider|Equal0~combout $end
+$var wire 1 m rst~combout $end
+$var wire 1 n h~combout $end
+$var wire 1 o state~11_combout $end
+$var wire 1 p state.E6~regout $end
+$var wire 1 q count~2_combout $end
+$var wire 1 r count[1]~1_combout $end
+$var wire 1 s count~0_combout $end
+$var wire 1 t state~15_combout $end
+$var wire 1 u state.E0~regout $end
+$var wire 1 v state~14_combout $end
+$var wire 1 w state.E1~regout $end
+$var wire 1 x state~13_combout $end
+$var wire 1 y state.E2~regout $end
+$var wire 1 z state~12_combout $end
+$var wire 1 { state.E3~regout $end
+$var wire 1 | state~10_combout $end
+$var wire 1 } state.E4~regout $end
+$var wire 1 ~ state~9_combout $end
+$var wire 1 !! state.E5~regout $end
+$var wire 1 "! s~10_combout $end
+$var wire 1 #! s~15_combout $end
+$var wire 1 $! s[0]~reg0_regout $end
+$var wire 1 %! s~11_combout $end
+$var wire 1 &! s~16_combout $end
+$var wire 1 '! s[1]~reg0_regout $end
+$var wire 1 (! s~12_combout $end
+$var wire 1 )! s~17_combout $end
+$var wire 1 *! s[2]~reg0_regout $end
+$var wire 1 +! s~13_combout $end
+$var wire 1 ,! s~18_combout $end
+$var wire 1 -! s[3]~reg0_regout $end
+$var wire 1 .! s~14_combout $end
+$var wire 1 /! s~19_combout $end
+$var wire 1 0! s[4]~reg0_regout $end
+$var wire 1 1! count [1] $end
+$var wire 1 2! count [0] $end
+$var wire 1 3! clockDivider|count [25] $end
+$var wire 1 4! clockDivider|count [24] $end
+$var wire 1 5! clockDivider|count [23] $end
+$var wire 1 6! clockDivider|count [22] $end
+$var wire 1 7! clockDivider|count [21] $end
+$var wire 1 8! clockDivider|count [20] $end
+$var wire 1 9! clockDivider|count [19] $end
+$var wire 1 :! clockDivider|count [18] $end
+$var wire 1 ;! clockDivider|count [17] $end
+$var wire 1 <! clockDivider|count [16] $end
+$var wire 1 =! clockDivider|count [15] $end
+$var wire 1 >! clockDivider|count [14] $end
+$var wire 1 ?! clockDivider|count [13] $end
+$var wire 1 @! clockDivider|count [12] $end
+$var wire 1 A! clockDivider|count [11] $end
+$var wire 1 B! clockDivider|count [10] $end
+$var wire 1 C! clockDivider|count [9] $end
+$var wire 1 D! clockDivider|count [8] $end
+$var wire 1 E! clockDivider|count [7] $end
+$var wire 1 F! clockDivider|count [6] $end
+$var wire 1 G! clockDivider|count [5] $end
+$var wire 1 H! clockDivider|count [4] $end
+$var wire 1 I! clockDivider|count [3] $end
+$var wire 1 J! clockDivider|count [2] $end
+$var wire 1 K! clockDivider|count [1] $end
+$var wire 1 L! clockDivider|count [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+0"
+0#
+0(
+0'
+0&
+0%
+0$
+x)
+0*
+1+
+x,
+1-
+1.
+1/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+1A
+0B
+0C
+1D
+0E
+1F
+0G
+0H
+xI
+1J
+0K
+1L
+0M
+1N
+0O
+1P
+0Q
+1R
+0S
+1T
+0U
+1V
+0W
+1X
+0Y
+1Z
+0[
+1\
+0]
+0^
+0_
+0`
+0a
+1b
+0c
+0d
+0e
+1f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+1q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+02!
+01!
+0L!
+0K!
+0J!
+0I!
+0H!
+0G!
+0F!
+0E!
+0D!
+0C!
+0B!
+0A!
+0@!
+0?!
+0>!
+0=!
+0<!
+0;!
+0:!
+09!
+08!
+07!
+06!
+05!
+04!
+03!
+$end
+#40000
+1"
+1n
+0)
+1.!
+1v
+1t
+1/!
+#1360000
+1#
+1m
+1)
+0/!
+0v
+0t
+1r
+0q
+#1460000
+0#
+0m
+0)
+1/!
+1v
+1t
+0r
+1q
+#1620000
+0"
+0n
+1)
+0.!
+0v
+0t
+0/!
+#1740000
+1"
+1n
+0)
+1.!
+1v
+1t
+1/!
+#2320000
+0"
+0n
+1)
+0.!
+0v
+0t
+0/!
+#2400000
+1"
+1n
+0)
+1.!
+1v
+1t
+1/!
+#3440000
+0"
+0n
+1)
+0.!
+0v
+0t
+0/!
+#5000000
